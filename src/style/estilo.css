@@ -1,0 +1,33 @@
+html{
+    scroll-behavior: smooth;  /*Esto hace que la pagina se deslice de manera gradual hacia la posicion deseada en lugar de cambiar bruscamente*/
+}
+
+body{
+    font-family: "Roboto", sans-serif;
+}
+
+.principal{
+    font-size: 36px;
+    color: red;
+}
+
+.titulo{
+    text-align: center;
+    text-decoration: underline;
+}
+
+.subtitulo{
+    font-size: 24px;
+    color: gray;
+}
+
+p{
+    font-style: italic;
+    font-size: 16px;
+}
+
+p > span{
+    font-weight: 800;
+    text-decoration: underline;
+    color: green;
+}

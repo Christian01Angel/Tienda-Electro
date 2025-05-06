@@ -4,44 +4,56 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="src/estilos/estilo.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="src/style/estilo.css">
     <title>Tienda Electro</title>
 </head>
 <body>
     <header>
-
+        <nav>
+            <ul>
+                <li><a href="#index.html">Inicio</a></li>
+                <li><a href="nosotros.html">Nosotros</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
     </header>
-    <nav>
-        <ul>
-            <li>Inicio</li>
-            <li>Nosotros</li>
-            <li>Contacto</li>
-        </ul>
-    </nav>
     <main>
-        <h1>Tienda Electro</h1>
+        <h1 class="titulo principal">Tienda Electro</h1>
+
+        <h2 class="titulo subtitulo">Acerca de la tienda</h2>
+
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptate quia libero eos quas cupiditate. Nihil esse quaerat quidem qui molestias exercitationem eaque, animi, quisquam consectetur non minima sequi temporibus laboriosam.</p>
 
         <div class="contenedor-productos">
+            <h2 class="titulo subtitulo">Catalogo</h2>
             <div class="producto-televisor">
+                <h2>Smart TV Noblex 50"</h2>
                 <img src="src/img/televisor_noblex_50.jpeg" alt="">
-                <p class="producto-nombre"></p>
-                <p class="producto-marca"></p>
-                <p class="producto-precio"></p>
+                <p class="producto-nombre"><span>Precio:</span> $700.000</p>
+                <p class="producto-marca"><span>Modelo:</span> DK50X6550</p>
+                <p class="producto-precio"><span>Marca:</span> Noblex</p>
 
             </div>
             
+                <h2>Heladera Whirlpool 554Lts</h2>
             <div class="producto-heladera">
+                <h2></h2>
                 <img src="src/img/heladera_whirpool.jpeg" alt="">
-                <p class="producto-nombre"></p>
-                <p class="producto-marca"></p>
-                <p class="producto-precio"></p>
+                <p class="producto-nombre"><span>Precio:</span> $3.788.400</p>
+                <p class="producto-marca"><span>Modelo:</span> WRO-85BK</p>
+                <p class="producto-precio"><span>Marca:</span> Whirlpool</p>
             </div>
 
             <div class="producto-freidora-aire">
+                <h2>Freidora de aire 6,5L</h2>
                 <img src="src/img/freidora_aire_digital.jpeg" alt="">
-                <p class="producto-nombre"></p>
-                <p class="producto-marca"></p>
-                <p class="producto-precio"></p>
+                <p class="producto-nombre"><span>Precio:</span> $120.200</p>
+                <p class="producto-marca"><span>Modelo: KJHAF1502</span> </p>
+                <p class="producto-precio" id="unico"><span>Marca:</span> Kanji</p>
             </div>
         </div>
     </main>
