@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="src/style/estilo.css">
+    <title>Tienda Electro</title>
+</head>
+<body id="contacto">
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="nosotros.html">Nosotros</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="contacto">
+        <h2 class="titulo-formulario">¡Escribinos, te responderemos a la brevedad!</h2>
+        <form action="" method="POST">
+            <div class="info">
+                <div class="nombre">
+                    <label for="nombre">Nombre:*</label>
+                    <input type="text" name="nombre" id="nombre" placeholder="Ej: Juan Perez" required>
+                </div>
+                <div class="email">
+                    <label for="email">Correo:*</label>
+                    <input type="email" name="email" id="email" placeholder="nombre@email.com" required>
+                </div>
+                <div class="telefono">
+                    <label for="telefono">Teléfono:</label>
+                    <input type="number" name="telefono" id="telefono" placeholder="1122334455">
+                </div>
+                <div class="fecha-nacimiento">
+                    <label for="fecha-nacimiento">Fecha de nacimiento:</label>
+                    <input type="date" name="fecha-nacimiento" id="fecha-nacimiento" placeholder="dd/mm/aaaa">
+                </div>
+                <div class="pais">
+                    <label for="pais">País de origen:</label>
+                    <select name="pais" id="pais">
+                        <option disabled selected>--Seleccionar--</option>
+                        <optgroup label="Sudamerica">
+                            <option value="Argentina">Argentina</option>
+                            <option value="Bolivia">Bolivia</option>
+                            <option value="Brasil">Brasil</option>
+                            <option value="Chile">Chile</option>
+                            <option value="Paraguay">Paraguay</option>
+                            <option value="Peru">Peru</option>
+                            <option value="Uruguay">Uruguay</option>
+                            <option value="Venezuela">Venezuela</option>
+                        </optgroup>
+                        <optgroup label="Norteamerica">
+                            <option value="Canada">Canada</option>
+                            <option value="Estados Unidos">Estados Unidos</option>
+                            <option value="Mexico">Mexico</option>
+                            <option value="Panama">Panama</option>
+                        </optgroup>
+                    </select>
+                </div>
+                <div class="asunto">
+                    <label for="asunto">Asunto:*</label>
+                    <select name="asunto" id="asunto" required>
+                        <option disabled selected>--Seleccionar--</option>
+                        <option value="Ventas">Ventas</option>
+                        <option value="Soporte">Soporte</option>
+                        <option value="Webmaster">Webmaster</option>
+                    </select>
+                </div>
+                <div class="mensaje">
+                    <label for="mensaje">Mensaje:*</label>
+                    <textarea height=20></textarea>
+                </div>
+                <div class="checkbox">
+                    <input type="checkbox" value="acepto" name=""><label>Acepto los terminos y condiciones</label>
+                    <input type="checkbox" name=""><label>Acepto recibir correos sobre novedades en el futuro</label>
+                </div>
+            </div>
+
+            <div class="mensaje">
+                <label for="mensaje">Mensaje</label>
+                <textarea name="mensaje" id="mensaje" required></textarea>
+            </div>
+            <div class="mayor-edad">
+                <label >¿Sos mayor de edad?</label>
+                <label for="si">Si</label><input type="radio" id="si" name="mayor-menor" value="si">
+                <label for="no">No</label><input type="radio" id="no" name="mayor-menor" value="no" default>
+
+                </radio>
+            </div>
+            <input class="submit" type="submit" value="Enviar">
+        </form>
+    </div>
+    </main>
+
+    <footer>
+        redes sociales
+    </footer>
+
+    <script src="src/js/app.js"></script>
+</body>
+</html>
