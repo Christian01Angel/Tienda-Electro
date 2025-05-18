@@ -26,23 +26,23 @@
         <h2 class="titulo-formulario">¡Escribinos, te responderemos a la brevedad!</h2>
         <form action="" method="POST">
             <div class="info">
-                <div class="nombre">
+                <div class="nombre campos">
                     <label for="nombre">Nombre:*</label>
                     <input type="text" name="nombre" id="nombre" placeholder="Ej: Juan Perez" required>
                 </div>
-                <div class="email">
+                <div class="email campos">
                     <label for="email">Correo:*</label>
                     <input type="email" name="email" id="email" placeholder="nombre@email.com" required>
                 </div>
-                <div class="telefono">
+                <div class="telefono campos">
                     <label for="telefono">Teléfono:</label>
                     <input type="number" name="telefono" id="telefono" placeholder="1122334455">
                 </div>
-                <div class="fecha-nacimiento">
+                <div class="fecha-nacimiento campos">
                     <label for="fecha-nacimiento">Fecha de nacimiento:</label>
                     <input type="date" name="fecha-nacimiento" id="fecha-nacimiento" placeholder="dd/mm/aaaa">
                 </div>
-                <div class="pais">
+                <div class="pais campos">
                     <label for="pais">País de origen:</label>
                     <select name="pais" id="pais">
                         <option disabled selected>--Seleccionar--</option>
@@ -64,7 +64,7 @@
                         </optgroup>
                     </select>
                 </div>
-                <div class="asunto">
+                <div class="asunto campos">
                     <label for="asunto">Asunto:*</label>
                     <select name="asunto" id="asunto" required>
                         <option disabled selected>--Seleccionar--</option>
@@ -73,24 +73,20 @@
                         <option value="Webmaster">Webmaster</option>
                     </select>
                 </div>
-                <div class="mensaje">
+                <div class="mensaje campos">
                     <label for="mensaje">Mensaje:*</label>
                     <textarea height=20></textarea>
                 </div>
                 <div class="checkbox">
-                    <input type="checkbox" value="acepto" name=""><label>Acepto los terminos y condiciones</label>
-                    <input type="checkbox" name=""><label>Acepto recibir correos sobre novedades en el futuro</label>
+                    <input type="checkbox" value="acepto" name="check1" id="check1"><label class="inline" for="check1">Acepto los terminos y condiciones</label>
+                    <input type="checkbox" name="check2" id="check2"><label class="inline" for="check2">Deseo recibir correos sobre novedades</label>
                 </div>
             </div>
 
-            <div class="mensaje">
-                <label for="mensaje">Mensaje</label>
-                <textarea name="mensaje" id="mensaje" required></textarea>
-            </div>
             <div class="mayor-edad">
                 <label >¿Sos mayor de edad?</label>
-                <label for="si">Si</label><input type="radio" id="si" name="mayor-menor" value="si">
-                <label for="no">No</label><input type="radio" id="no" name="mayor-menor" value="no" default>
+                <label for="si" class="inline">Si</label><input type="radio" id="si" name="mayor-menor" value="si">
+                <label for="no" class="inline">No</label><input type="radio" id="no" name="mayor-menor" value="no" default>
 
                 </radio>
             </div>

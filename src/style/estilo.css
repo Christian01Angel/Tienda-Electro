@@ -6,6 +6,34 @@ body{
     font-family: "Roboto", sans-serif;
 }
 
+nav{
+    display: block;
+    align-items: center;
+    background-color: red;
+}
+
+ul{
+    list-style-type: none;
+    margin: 0 15px;
+    padding: 14px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+a{
+    text-decoration: none;
+    color:white;
+    padding: 0 50px;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+main{
+    margin: 20px 5%;
+}
+
 .principal{
     font-size: 36px;
     color: red;
@@ -21,9 +49,30 @@ body{
     color: gray;
 }
 
-.producto, #video{
-    background-color: #eee;
+.contenedor-productos{
+    display:flex;
     width: 100%;
+}
+
+.producto{
+    display: inline-block;
+    width: 285px;
+    margin: 20px auto;
+    padding: 15px;
+    background-color: #eee;
+    border-radius: 8px;
+}
+
+.imagen-producto{
+    margin: auto;
+    display: block;
+    height: 200px;
+}
+
+#video{
+    background-color: #eee;
+    border-radius: 8px;
+    padding: 20px;
 }
 
 p{
@@ -35,4 +84,44 @@ p > span{
     font-weight: 800;
     text-decoration: underline;
     color: green;
+}
+
+form{
+    padding: 20px;
+    width: 60%;
+    margin: auto;
+    border: 1px solid #eee;
+}
+
+.mayor-edad, .checkbox{
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    padding: 0;
+    justify-content: left;
+}
+
+.checkbox > input, .mayor-edad > input{
+    width: 20px;
+}
+
+label{
+    display:block;
+}
+
+input, select{
+    border-radius: 8px;
+    display:block;
+    width: 100%;
+    height: 25px;
+    margin-bottom: 10px;
+    border-color: red;
+}
+
+textarea{
+    width: 100%;
+    border-color: red;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    height: 100px;
 }
